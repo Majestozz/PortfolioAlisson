@@ -19,8 +19,6 @@ html, body {
   }
 
 *{
-    
-   
     font-family: var(--fonte-main);
 }
 .buttonMenu{
@@ -101,6 +99,7 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
   }
   .project-window-container.hidden{
     display: none;

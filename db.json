@@ -10,23 +10,30 @@
         {
             "id":2,
             "title":"Crud Java",
-            "description": "Crud Made for Registering Items for Your Stock, in Java with Spring and JPA. INCOMPLETE",
-            "urlGit":"https://github.com/Majestozz/StressFreeShopping",
-            "urlSite" : "https://stress-free-shopping.vercel.app/"
+            "description": "Crud Made for Registering Doctor in App, in Java with Spring and JPA. INCOMPLETE",
+            "urlGit":"https://github.com/Majestozz/CrudDoctorsJava",
+            "urlSite" : "#"
         },
         {
             "id":3,
-            "title":"AluraPlay",
-            "description": "Site feito no curso da Alura",
-            "urlGit":"https://github.com/Majestozz/StressFreeShopping",
-            "urlSite" : "https://stress-free-shopping.vercel.app/"
+            "title":"Java Pack",
+            "description": "Compiled from projects made in Java",
+            "urlGit":"https://github.com/Majestozz/Java-Pack",
+            "urlSite" : "#"
         },
         {
             "id":4,
-            "title":"Site Jogo Por Voz",
-            "description": "Site utilizando uma API para reconhecer voz, um jogo onde randomiza numeros de 1 a 100 e com sua voz, você tenta Acertar ",
-            "urlGit":"https://github.com/Majestozz/StressFreeShopping",
+            "title":"Voice Game Website",
+            "description": "Site using an API to recognize voice, a game where you randomize numbers from 1 to 100 and with your voice, you try to get it right",
+            "urlGit":"https://github.com/Majestozz/JogoNumeroSecretoAluraComVoz",
             "urlSite" : "https://stress-free-shopping.vercel.app/"
+        },
+        {
+            "id":5,
+            "title":"Game in Godot PAC",
+            "description": "Turn Game for Faculty PAC Project (PAUSED)",
+            "urlGit":"https://github.com/Majestozz/PAC03",
+            "urlSite" : "#"
         }
 
     ]
