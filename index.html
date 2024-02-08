@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,500&display=swap"
+        rel="stylesheet">
+       
+    <title>Portfolio Alisson</title>
+</head>
+
+<body>
+    <section class="header-container"><!--Section for header-->
+        <header class="header-main">
+            <div class="header-styling">
+                <h1 class="title" id="titleId">Welcome to the Portfolio of Alisson Inácio</h1>
+                <section class="infos" id="infoScreen">
+
+                    <a class="home buttonMenu" id="homeButton">Home</a>
+
+                    <a class="about buttonMenu" id="aboutButton">About</a><!--Link for page of about-->
+                    
+                    <a class="projects buttonMenu"id="projectsButton">Projects</a><!--Link for , page of Projects-->
+                    
+                    <a class="ability buttonMenu" id="abilityButton">Ability</a><!--Link for page of Abilitys-->
+                   
+                    <a class="contact buttonMenu" id="contactButton">Contact</a><!--Link for page of Contact-->   
+            </div>
+        </header>
+    </section>
+    <div class="about-window-container  hidden" id="divAbout">
+        <p class="about-text">
+            sobre eu
+        </p>
+    </div>
+    <!--Cards-->
+    <div class="project-window-container hidden" id="divProjects" data-projects>
+        </div>
+
+    
+    <div class="ability-window-container hidden" id="divAbility">
+        <p class="ability-text">
+            minhas habilidades
+        </p>
+    </div>
+    <div class="contact-window-container hidden" id="divContact">
+        <p class="contact-text">
+            contatinhos hehe
+        </p>
+    </div>
+    <script src="./js/viewProjects.js" type="module"></script>
+    <script src="./js/app.js" type="module"></script>
+</body>
+
+</html>

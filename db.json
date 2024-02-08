@@ -1,0 +1,33 @@
+{
+    "projetos" : [
+        {
+            "id":1,
+            "title":"WEB Shopping List",
+            "description": "Website to Make your Shopping List without Stress, Using Pure JavaScript, HTML and CSS",
+            "urlGit":"https://github.com/Majestozz/StressFreeShopping",
+            "urlSite" : "https://stress-free-shopping.vercel.app/"
+        },
+        {
+            "id":2,
+            "title":"Crud Java",
+            "description": "Crud Made for Registering Items for Your Stock, in Java with Spring and JPA. INCOMPLETE",
+            "urlGit":"https://github.com/Majestozz/StressFreeShopping",
+            "urlSite" : "https://stress-free-shopping.vercel.app/"
+        },
+        {
+            "id":3,
+            "title":"AluraPlay",
+            "description": "Site feito no curso da Alura",
+            "urlGit":"https://github.com/Majestozz/StressFreeShopping",
+            "urlSite" : "https://stress-free-shopping.vercel.app/"
+        },
+        {
+            "id":4,
+            "title":"Site Jogo Por Voz",
+            "description": "Site utilizando uma API para reconhecer voz, um jogo onde randomiza numeros de 1 a 100 e com sua voz, você tenta Acertar ",
+            "urlGit":"https://github.com/Majestozz/StressFreeShopping",
+            "urlSite" : "https://stress-free-shopping.vercel.app/"
+        }
+
+    ]
+}
