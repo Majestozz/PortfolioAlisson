@@ -28,7 +28,6 @@ function allButtonsMenu(){
           }
            if (buttonId == "projectsButton"){
             projectContainer.classList.remove("hidden")
-            
             infosScreen.classList.add("active")
             buildCard()
            }else{
@@ -49,8 +48,7 @@ function allButtonsMenu(){
            if (buttonId == "homeButton") {
             titleMain.classList.remove("hidden")
             infosScreen.classList.remove("active")
-           } else {
-           }
+           } 
         }
       )
     });
