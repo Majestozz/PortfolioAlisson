@@ -26,13 +26,7 @@ html, body {
 }p{
     background-color: transparent;
 }
-/*---Imagem main---*/
-.grass-main{
-    width: 100%;
-    height: auto;
-    display: block;
-    opacity: 0.5;
-}
+
 /*--Title--*/
 .title{
     position: absolute;
@@ -313,3 +307,316 @@ a:hover {
   }
 }
 
+@media  screen and (max-width: 390px){
+
+
+  :root{
+    --cor-background:#87BBA2;
+    --cor-verde-primaria: #2A4D14;
+    --cor-branca-primaria:#EEF0F2;
+    --cor-branca-secundaria:#DCE0E4;
+    --cor-verde-clara:#70AE6E;
+    --cor-verde-clara-secundaria:#5C9D58;
+    --fonte-main:font-family: 'Poppins', sans-serif;
+}
+/*----no bords----*/
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: var(--cor-background);
+    overflow: hidden;
+  }
+
+*{
+    font-family: var(--fonte-main);
+}
+.buttonMenu{
+    cursor: pointer;
+}p{
+    background-color: transparent;
+}
+
+/*--Title--*/
+.title{
+    position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: var(--cor-branca-primaria); 
+      text-align: center;
+      background-color: transparent; 
+      font-family: var(--fonte-main);
+      
+}
+
+/*--Infos--*/
+.infos{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 500%);
+    text-align: center;
+    background-color: transparent;
+    font-family: var(--fonte-main);
+    display: flex;
+    gap: 1.3rem;
+    flex-direction: row;
+    border-bottom: 2px solid var(--cor-verde-primaria);
+}
+.infos a{
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+    font-family: var(--fonte-main);
+}
+a:hover {   
+    color: var(--cor-branca-primaria);
+}
+.hidden{
+    display: none;
+}
+.active{
+    position: absolute;
+    top: 1%
+}
+
+.about-window-container{
+    width: 80%; 
+    height: 220px; 
+    margin: 0 auto;
+    background-color: var(--cor-branca-primaria); 
+    overflow: auto; 
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--cor-verde-primaria);
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.project-window-container {
+    display: flex;
+    gap: 6rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-wrap: wrap;
+  }
+  .project-window-container.hidden{
+    display: none;
+  }
+   
+  
+   /*---CardsProjects---*/
+   .card {
+    --font-color: #323232;
+    --bg-color: #e0e0e0;
+    width: 250px;
+    height: 350px;
+    border-radius: 20px;
+    background: var(--bg-color);
+    box-shadow: -9px 9px 18px #5a5a5a,
+                9px -9px 18px #ffffff;
+    display: flex;
+    transition: .4s;
+    
+  }
+  .card.hidden{
+    display: none;
+  }
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px 2px #5a5a5a;
+  }
+  
+  .card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    background-color: var(--cor-verde-clara);
+  }
+  
+  .card__descr-wrapper {
+    padding: 15px;
+    display: grid;
+  }
+  
+  .card__title {
+    color: var(--font-color);
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 900;
+    font-size: 16px;
+  }
+  
+  .card__descr {
+    color: var(--font-color);
+  }
+  
+  .svg {
+    width: 25px;
+    height: 25px;
+    transform: translateY(25%);
+    fill: var(--font-color);
+  }
+  
+  .card__links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+  }
+  
+  .card__links .link {
+    color: var(--font-color);
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  
+  .card__links .link:hover {
+    text-decoration: underline;
+  }
+  
+/*---CardsAbility---*/
+.cards-ability {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cards-ability .red {
+  background-color: var(--cor-verde-primaria);
+}
+
+.cards-ability .blue {
+  background-color: var(--cor-verde-clara-secundaria);
+}
+
+.cards-ability .green {
+  background-color: #22c55e;
+}
+
+.cards-ability .card-ability {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100px;
+  width: 250px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.cards-ability .card-ability p.tip {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.cards-ability .card-ability p.second-text {
+  font-size: .7em;
+}
+
+.cards-ability .card-ability:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cards-ability:hover > .card-ability:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
+
+/*--cardContact--*/
+.card-contact {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+  
+    }
